@@ -179,12 +179,18 @@ var PlayersPanel = PlayersPanel || {};
             player._realY
         );
 
+        const direction =
+            (player._direction !== undefined &&
+                player._direction !== null)
+                ? player._direction
+                : "-";
+
         renderer.Property(
             "Direction",
             this.SafeCall(
                 player,
                 "direction",
-                player._direction ?? "-"
+                direction
             )
         );
 
