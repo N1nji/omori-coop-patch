@@ -1,0 +1,39 @@
+{
+    "id": "omori-coop-fixes",
+    "name": "OMORI Coop Enhanced",
+    "description": "Compatibility and gameplay improvements for OMORI Local Multiplayer.",
+    "author": "Pedro Felipe",
+    "version": "0.0.1",
+    "manifestVersion": 1,
+
+    "plugin": {
+        "entry": "OMORI_CoopEnhanced.js"
+    },
+
+    "bundle": [
+        "core/Logger.js",
+        "core/Debug.js",
+        "core/PatchManager.js",
+
+        "diagnostics/HudLayout.js",
+        "diagnostics/HudRenderer.js",
+        "diagnostics/HudPanel.js",
+        "diagnostics/DebugHud.js",
+
+        "diagnostics/panels/ScenePanel.js",
+        "diagnostics/panels/PlayersPanel.js",
+        "diagnostics/panels/TransferPanel.js",
+        "diagnostics/panels/EventPanel.js",
+        "diagnostics/panels/SoftlockPanel.js",
+
+        "patches/TransferPatch.js",
+        "patches/CutscenePatch.js",
+        "patches/EventPatch.js",
+        "patches/SoftlockPatch.js",
+        "patches/PluginPatch.js",
+
+        "core/Bootstrap.js",
+
+        "OMORI_CoopEnhanced.js"
+    ]
+}
